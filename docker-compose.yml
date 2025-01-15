@@ -25,7 +25,7 @@ services:
       - "8081:80"  # Map port 80 in the container to port 8081 on the host
       - "4433:443"
     depends_on:
-      - web_flora
+      - web
 
 volumes:
   media_volume:
