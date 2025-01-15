@@ -25,8 +25,7 @@ SECRET_KEY = 'django-insecure--4_49uwi^b2nzzfsm7pin$%w3twr8zj3xq6t%6h$d28nh_(3b$
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-# ALLOWED_HOSTS = ['floraflow.tech', 'www.floraflow.tech', '127.0.0.1', 'localhost', 'web']
-ALLOWED_HOSTS = ['floraflow.tech', 'www.floraflow.tech', 'web_flora']
+ALLOWED_HOSTS = ['floraflow.tech', 'www.floraflow.tech', '127.0.0.1', 'localhost', 'web_flora']
 
 SESSION_COOKIE_AGE = 1209600  # 2 weeks in seconds
 SESSION_COOKIE_HTTPONLY = True  # Prevent JavaScript access to the cookie
