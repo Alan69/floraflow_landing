@@ -13,6 +13,8 @@ services:
       - "8001:8000"
     environment:
       - DJANGO_SETTINGS_MODULE=flora_flow.settings
+    networks:
+      - floraflow_network
 
   nginx:
     image: nginx:latest
@@ -26,6 +28,12 @@ services:
       - "4433:443"
     depends_on:
       - web
+    networks:
+      - floraflow_network
 
 volumes:
   media_volume:
+
+networks:
+  floraflow_network:
+    driver: bridge
